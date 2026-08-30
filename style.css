@@ -28,7 +28,7 @@ body{
 
 header{
 
-    border-top:10px solid #8b1638;
+    border-top:10px solid #134147;
 
     padding:70px;
 
@@ -47,7 +47,7 @@ header{
 
     font-size:60px;
 
-    color:#8b1638;
+    color:#134147;
 
     line-height:1.1;
 
@@ -279,7 +279,7 @@ button{
 
     border-radius:8px;
 
-    background:#8b1638;
+    background:#134147;
 
     color:white;
 
